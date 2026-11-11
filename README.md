@@ -87,6 +87,13 @@ A API disponibiliza as seguintes rotas na rota base `/api/pets`:
   "foto": "[https://images.unsplash.com/photo-1552053831-71594a27632d](https://images.unsplash.com/photo-1552053831-71594a27632d)",
   "disponivel": true
 }
+```
+
+
+
+
+## Anexos
+
 
 
 
