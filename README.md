@@ -89,10 +89,20 @@ A API disponibiliza as seguintes rotas na rota base `/api/pets`:
 }
 ```
 
+### Anexos de teste no POSTMAN ↓↓
 
 
+## Post (Cadastro)
 
-## Anexos
+<img width="1060" height="964" alt="post" src="https://github.com/user-attachments/assets/0695219a-d730-42a4-8778-ab5762fb0a47" />
+
+## Get (Visualização)
+
+<img width="1067" height="970" alt="get" src="https://github.com/user-attachments/assets/b1fcdbf0-67b6-4ffd-82fd-50b41072456a" />
+
+## Delete
+
+<img width="1093" height="980" alt="delete" src="https://github.com/user-attachments/assets/6b0c3197-e2c8-4fce-a66e-f703bdd7b067" />
 
 
 
