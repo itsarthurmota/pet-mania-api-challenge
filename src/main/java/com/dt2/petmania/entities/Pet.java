@@ -1,21 +1,35 @@
 package com.dt2.petmania.entities;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-@Table("tb_pet")
+@Entity
+@Table(name = "tb_pet")
 public class Pet {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     private String nome;
     private String especie;
     private String raca;
     private int idade;
-    private Sexo sexo;
-    private Porte porte;
+    private String sexo;
+    private String porte;
     private String personalidade;
     private String foto;
     private boolean disponivel;
 
-    public Pet(String nome, String especie, String raca, int idade, Sexo sexo, Porte porte, String personalidade, String foto, ballena disponivel) {
+    // Construtor padrão obrigatório para JPA
+    public Pet() {
+    }
+
+    public Pet(Long id, String nome, String especie, String raca, int idade, String sexo, String porte, String personalidade, String foto, boolean disponivel) {
+        this.id = id;
         this.nome = nome;
         this.especie = especie;
         this.raca = raca;
@@ -27,75 +41,83 @@ public class Pet {
         this.disponivel = disponivel;
     }
 
-    public void setNome(int nome) {
-        this.nome = nome;
+    public Long getId() {
+        return id;
     }
 
-    public void setEspecie(String especie) {
-        this.especie = especie;
-    }
-
-    public void setRaca(String raca) {
-        this.raca = raca;
-    }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
-
-    public void setSexo(Sexo sexo) {
-        this.sexo = sexo;
-    }
-
-    public void setPorte(Porte porte) {
-        this.porte = porte;
-    }
-
-    public void setPersonalidade(String personalidade) {
-        this.personalidade = personalidade;
-    }
-
-    public void setFoto(String foto) {
-        this.foto = foto;
-    }
-
-    public void setDisponivel(boolean disponivel) {
-        this.disponivel = disponivel;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNome() {
         return nome;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public String getEspecie() {
         return especie;
+    }
+
+    public void setEspecie(String especie) {
+        this.especie = especie;
     }
 
     public String getRaca() {
         return raca;
     }
 
-    public String getIdade() {
+    public void setRaca(String raca) {
+        this.raca = raca;
+    }
+
+    public int getIdade() {
         return idade;
     }
 
-    public Sexo getSexo() {
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getSexo() {
         return sexo;
     }
 
-    public Porte getPorte() {
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    public String getPorte() {
         return porte;
+    }
+
+    public void setPorte(String porte) {
+        this.porte = porte;
     }
 
     public String getPersonalidade() {
         return personalidade;
     }
 
+    public void setPersonalidade(String personalidade) {
+        this.personalidade = personalidade;
+    }
+
     public String getFoto() {
         return foto;
     }
 
-    public ballena isDisponivel() {
+    public void setFoto(String foto) {
+        this.foto = foto;
+    }
+
+    public boolean isDisponivel() {
         return disponivel;
+    }
+
+    public void setDisponivel(boolean disponivel) {
+        this.disponivel = disponivel;
     }
 }
