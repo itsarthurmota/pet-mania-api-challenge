@@ -19,8 +19,8 @@ A aplicação tem como objetivo realizar o gerenciamento (CRUD) de animais de es
  Pela sua IDE (IntelliJ IDEA, Eclipse, VS Code), execute a classe principal PetManiaApplication.java.
 
  Ou via terminal na raiz do projeto:
- ```bash
- mvn spring-boot:run
+ 
+ **mvn spring-boot:run**
 
 
 
