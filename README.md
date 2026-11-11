@@ -21,6 +21,7 @@ A aplicação tem como objetivo realizar o gerenciamento (CRUD) de animais de es
  Ou via terminal na raiz do projeto:
  
  **mvn spring-boot:run**
+ 
 4. Acessar a API:
 A aplicação estará rodando no endereço: http://localhost:8080/api/pets
 
