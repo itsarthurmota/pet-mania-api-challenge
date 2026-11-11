@@ -5,6 +5,24 @@ Projeto desenvolvido como parte da atividade prática de análise, diagnóstico,
 A aplicação tem como objetivo realizar o gerenciamento (CRUD) de animais de estimação para a plataforma **Pet Mania**, servindo como back-end para integração com uma aplicação front-end.
 
 ---
+##  Como Executar o Projeto
+
+1. **Clonar o repositório:**
+   ```bash
+   git clone https://github.com/itsarthurmota/pet-mania-api-challenge
+
+2. Configurar o banco de dados (application.properties):
+ Garantir que as configurações no arquivo src/main/resources/application.properties estejam apontando corretamente para o banco (H2 em memória ou MySQL).
+
+ Executar a aplicação:
+
+ Pela sua IDE (IntelliJ IDEA, Eclipse, VS Code), execute a classe principal PetManiaApplication.java.
+
+ Ou via terminal na raiz do projeto:
+ ```bash
+ mvn spring-boot:run
+
+
 
 ##  Tecnologias Utilizadas
 
@@ -68,3 +86,7 @@ A API disponibiliza as seguintes rotas na rota base `/api/pets`:
   "foto": "[https://images.unsplash.com/photo-1552053831-71594a27632d](https://images.unsplash.com/photo-1552053831-71594a27632d)",
   "disponivel": true
 }
+
+
+
+
