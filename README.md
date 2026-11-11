@@ -14,15 +14,15 @@ A aplicação tem como objetivo realizar o gerenciamento (CRUD) de animais de es
 2. Configurar o banco de dados (application.properties):
  Garantir que as configurações no arquivo src/main/resources/application.properties estejam apontando corretamente para o banco (H2 em memória ou MySQL).
 
- Executar a aplicação:
+3. Executar a aplicação:
 
  Pela sua IDE (IntelliJ IDEA, Eclipse, VS Code), execute a classe principal PetManiaApplication.java.
 
  Ou via terminal na raiz do projeto:
  
  **mvn spring-boot:run**
-
-
+4. Acessar a API:
+A aplicação estará rodando no endereço: http://localhost:8080/api/pets
 
 ##  Tecnologias Utilizadas
 
